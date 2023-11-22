@@ -14,7 +14,7 @@ if ($_POST) {
 
 
 
-        $insert = $pdo->prepare("INSERT INTO usuario (nome, raca, sexo,cor,nascimento,peso,altura) VALUES ('$nome', '$raca', '$sexo','$sexo',)");
+        $insert = $pdo->prepare("INSERT INTO usuario (nome, raca, sexo,cor,nascimento,peso,altura) VALUES ('$nome', '$raca', '$sexo','$cor',)");
 
         if ($insert->execute()) {
             echo 1;
